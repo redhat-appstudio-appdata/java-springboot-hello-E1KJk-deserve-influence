@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: java-springboot-hello-yw7b
+  namespace: samburrai-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:15f7c928b5bf8298d1e7087f103fc24ebebd20210f80991f3a87cc8269d69fa4
+        name: my-java-springboot
+        resources: {}
+status: {}
